@@ -1,6 +1,5 @@
-import string
 
-def twoSum(nums:[int], target:int) :
+def twoSum(nums: [int], target: int) -> [int] :
     lst_ans = []
     l = len(nums)
 
@@ -15,10 +14,3 @@ def twoSum(nums:[int], target:int) :
             
     return lst_ans
 
-line = input().split()
-
-lst = list(map(int, line[2][1:-2].split(sep=",")))
-tar = int(line[5])
-
-a = twoSum(lst, tar)
-print("[", a[0], ", ", a[1], "]", sep="")
